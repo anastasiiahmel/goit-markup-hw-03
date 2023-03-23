@@ -1,0 +1,307 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f42;
+  --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+  --color-general: #e5e5e5;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--color-slate, #434455);
+  background-color: var(--color-white, #ffffff);
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*-------------------------------------header--------------------------------------*/
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 4px solid #bf4040;
+}
+
+.header {
+  background: var(--color-white, #ffffff);
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.header-logo-web {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-iris, #4d5ae5);
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-grey, #2e2f42);
+}
+
+.header-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-grey, #2e2f42);
+}
+.header-text:hover,
+.header-text:focus {
+  color: var(--color-ocean, #404bbf);
+}
+
+.header-contacts {
+  font-style: normal;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+}
+.neader-list {
+  display: flex;
+}
+.contact {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate, #434455);
+  font-style: normal;
+}
+.contact:hover,
+.contact:focus {
+  color: var(--color-ocean, #404bbf);
+}
+
+/*-------------------------------------hero--------------------------------------*/
+.hero {
+  background: var(--color-grey, #2e2f42);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-white, #ffffff);
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
+}
+.hero-btn {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--color-white, #ffffff);
+  background: var(--color-iris, #4d5ae5);
+  cursor: pointer;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 48px;
+  margin-left: auto;
+
+  min-width: 169px;
+  height: 56px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--color-ocean, #404bbf);
+}
+/*-------------------------------------features--------------------------------------*/
+.features-icon {
+  padding: 120px 0px;
+}
+.features-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-grey, #2e2f42);
+  background-color: #ffffff;
+}
+.features-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate, #434455);
+  background-color: #ffffff;
+}
+
+/*-------------------------------------examples--------------------------------------*/
+
+.examples {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-grey, #2e2f42);
+  background-color: #ffffff;
+}
+
+.examples-img {
+  text-decoration: none;
+}
+.examples-list {
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+/*-------------------------------------team--------------------------------------*/
+
+.team-list {
+  list-style: none;
+}
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-grey, #2e2f42);
+  background: var(--color-cloud, #f4f4fd);
+}
+
+.team-back {
+  background: var(--color-cloud, #f4f4fd);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-grey, #2e2f42);
+}
+.team-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate, #434455);
+  background-color: #ffffff;
+}
+
+.team-list {
+  background: var(--color-cloud, #f4f4fd);
+}
+.team-photo {
+  background-color: #ffffff;
+}
+.team-img {
+  text-decoration: none;
+}
+
+.team-text {
+  background-color: #ffffff;
+  padding-top: 72px;
+}
+/* ---------------footer------------------ */
+
+.footer {
+  background: var(--color-grey, #2e2f42);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-iris, #4d5ae5);
+}
+.footer-logo-studio {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-cloud, #f4f4fd);
+}
+
+.footer-items {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-cloud, #f4f4fd);
+}
