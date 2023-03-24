@@ -52,7 +52,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 4px solid #bf4040;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .header {
@@ -86,6 +87,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-grey, #2e2f42);
+  margin-right: 76px;
 }
 
 .header-text {
@@ -102,17 +104,19 @@ body {
 
 .header-contacts {
   font-style: normal;
+  display: flex;
 }
 .header-nav {
   display: flex;
-  align-items: center;
 }
-
 .header-menu {
   display: flex;
+  gap: 40px;
 }
-.neader-list {
+.header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .contact {
   font-weight: 400;
@@ -125,6 +129,11 @@ body {
 .contact:hover,
 .contact:focus {
   color: var(--color-ocean, #404bbf);
+}
+.header-list {
+  align-items: center;
+  display: inline-flex;
+  gap: 40px;
 }
 
 /*-------------------------------------hero--------------------------------------*/
@@ -184,6 +193,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-grey, #2e2f42);
   background-color: #ffffff;
+  align-items: center;
+  margin-bottom: 8px;
 }
 .features-item {
   font-weight: 400;
@@ -193,7 +204,14 @@ body {
   color: var(--color-slate, #434455);
   background-color: #ffffff;
 }
+.features {
+  width: 264px;
+}
 
+.features-list {
+  display: flex;
+  gap: 24px;
+}
 /*-------------------------------------examples--------------------------------------*/
 
 .examples {
@@ -211,8 +229,14 @@ body {
   text-decoration: none;
 }
 .examples-list {
-  padding-top: 72px;
-  padding-bottom: 120px;
+  margin-top: 72px;
+  margin-bottom: 120px;
+  display: flex;
+  width: calc((100% - 48px) / 3);
+}
+
+.examples-img {
+  margin-right: 24px;
 }
 /*-------------------------------------team--------------------------------------*/
 
@@ -242,6 +266,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-grey, #2e2f42);
+  background-color: #ffffff;
+  padding-top: 32px;
 }
 .team-item {
   font-weight: 400;
@@ -250,21 +276,26 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-slate, #434455);
   background-color: #ffffff;
+  padding-bottom: 32px;
+  align-items: center;
+  gap: 60px;
 }
 
 .team-list {
   background: var(--color-cloud, #f4f4fd);
+  display: flex;
+  width: calc((100% - 72px) / 4);
 }
 .team-photo {
-  background-color: #ffffff;
 }
 .team-img {
   text-decoration: none;
+  text-align: center;
 }
 
 .team-text {
-  background-color: #ffffff;
-  padding-top: 72px;
+  margin-top: 72px;
+  margin-right: 24px;
 }
 /* ---------------footer------------------ */
 
@@ -296,6 +327,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-cloud, #f4f4fd);
+  width: 1128px;
 }
 
 .footer-items {
@@ -304,4 +336,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-cloud, #f4f4fd);
+  margin-top: 18px;
+  max-width: 300px;
+}
+
+.footer-bottom {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
