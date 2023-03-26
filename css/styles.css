@@ -14,6 +14,12 @@
   --color-general: #e5e5e5;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--color-slate, #434455);
+  background-color: var(--color-white, #ffffff);
+}
 p,
 h1,
 h2,
@@ -24,7 +30,9 @@ h6 {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
+  list-style: none;
   margin: 0;
   padding-left: 0;
 }
@@ -32,11 +40,13 @@ ul {
 img {
   display: block;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: var(--color-slate, #434455);
-  background-color: var(--color-white, #ffffff);
+button {
+  display: flex;
+  cursor: pointer;
+  border: none;
+}
+address {
+  font-style: normal;
 }
 .list {
   list-style: none;
@@ -45,21 +55,26 @@ body {
 .link {
   text-decoration: none;
 }
-
-/*-------------------------------------header--------------------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 
+/*-------------------------------------header--------------------------------------*/
+
 .header {
-  background: var(--color-white, #ffffff);
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-logo-web {
@@ -87,7 +102,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-grey, #2e2f42);
-  margin-right: 76px;
 }
 
 .header-text {
@@ -105,6 +119,7 @@ body {
 .header-contacts {
   font-style: normal;
   display: flex;
+  margin-left: auto;
 }
 .header-nav {
   display: flex;
@@ -112,10 +127,11 @@ body {
 .header-menu {
   display: flex;
   gap: 40px;
+  margin-left: 76px;
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
 }
 .contact {
@@ -138,9 +154,10 @@ body {
 
 /*-------------------------------------hero--------------------------------------*/
 .hero {
-  background: var(--color-grey, #2e2f42);
+  background-color: var(--color-grey);
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
 }
 
 .hero-title {
@@ -152,7 +169,7 @@ body {
   color: var(--color-white, #ffffff);
   margin-left: auto;
   margin-right: auto;
-  width: 496px;
+  max-width: 496px;
 }
 .hero-btn {
   margin: 0 auto;
@@ -167,15 +184,13 @@ body {
   letter-spacing: 0.04em;
   color: var(--color-white, #ffffff);
   background: var(--color-iris, #4d5ae5);
-  cursor: pointer;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 48px;
   margin-left: auto;
-
+  border: none;
   min-width: 169px;
-  height: 56px;
 }
 
 .hero-btn:hover,
@@ -183,7 +198,7 @@ body {
   background: var(--color-ocean, #404bbf);
 }
 /*-------------------------------------features--------------------------------------*/
-.features-icon {
+.section {
   padding: 120px 0px;
 }
 .features-subtitle {
@@ -222,21 +237,19 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-grey, #2e2f42);
-  background-color: #ffffff;
 }
 
 .examples-img {
   text-decoration: none;
 }
 .examples-list {
+  gap: 24px;
   margin-top: 72px;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   display: flex;
-  width: calc((100% - 48px) / 3);
 }
 
 .examples-img {
-  margin-right: 24px;
 }
 /*-------------------------------------team--------------------------------------*/
 
@@ -250,12 +263,11 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--color-grey, #2e2f42);
-  background: var(--color-cloud, #f4f4fd);
+  color: var(--color-grey);
 }
 
 .team-back {
-  background: var(--color-cloud, #f4f4fd);
+  background: var(--color-cloud);
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -265,7 +277,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-grey, #2e2f42);
+  color: var(--color-grey);
   background-color: #ffffff;
   padding-top: 32px;
 }
@@ -282,9 +294,9 @@ body {
 }
 
 .team-list {
-  background: var(--color-cloud, #f4f4fd);
   display: flex;
-  width: calc((100% - 72px) / 4);
+  margin-top: 72px;
+  gap: 24px;
 }
 .team-photo {
 }
@@ -294,8 +306,6 @@ body {
 }
 
 .team-text {
-  margin-top: 72px;
-  margin-right: 24px;
 }
 /* ---------------footer------------------ */
 
